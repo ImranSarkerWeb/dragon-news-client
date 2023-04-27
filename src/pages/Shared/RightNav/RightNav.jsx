@@ -15,10 +15,10 @@ const RightNav = () => {
     <div>
       <div className="mb-3">
         <h4>Login With</h4>
-        <Button className="mb-2" variant="outline-primary">
+        <Button className="mb-2 w-100" variant="outline-primary">
           <FaGoogle /> Login With Google
         </Button>
-        <Button variant="outline-secondary">
+        <Button className="w-100" variant="outline-secondary">
           <FaGithub /> Login With Github
         </Button>
       </div>
