@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, ListGroup } from "react-bootstrap";
+import rightNavBg from "../../../assets/bg.png";
 import {
   FaFacebook,
   FaGithub,
@@ -7,6 +8,7 @@ import {
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa";
+import Qzone from "../QZone/Qzone";
 
 const RightNav = () => {
   return (
@@ -33,6 +35,18 @@ const RightNav = () => {
             <FaInstagram /> instagram
           </ListGroup.Item>
         </ListGroup>
+      </div>
+      <Qzone />
+      <div className="position-relative">
+        <img className="w-100 " src={rightNavBg} alt="" />
+        <div className="position-absolute top-0 p-5 my-5 text-center text-white">
+          <h2>Create an Amazing Newspaper</h2>
+          <p className="my-4">
+            Discover thousands of options, easy to customize layouts, one-click
+            to import demo and much more.
+          </p>
+          <Button variant="danger">Learn More</Button>
+        </div>
       </div>
     </div>
   );
