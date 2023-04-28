@@ -1,15 +1,14 @@
+import moment from "moment";
 import React from "react";
-import { Card, Col, Row } from "react-bootstrap";
 import first from "../../../assets/1.png";
 import second from "../../../assets/2.png";
 import third from "../../../assets/3.png";
-import moment from "moment";
+import { Card, Col, Row } from "react-bootstrap";
 import { FaCalendarAlt } from "react-icons/fa";
-import { useLocation } from "react-router-dom";
 
-const EditorInsights = () => {
+const NavCard = () => {
   return (
-    <Row xs={1} md={2} lg={3} className="g-4 mt-4">
+    <Row xs={1} md={1} lg={1} className="g-4 mt-4">
       <Col>
         <Card>
           <Card.Img variant="top" src={first} />
@@ -68,4 +67,4 @@ const EditorInsights = () => {
   );
 };
 
-export default EditorInsights;
+export default NavCard;
