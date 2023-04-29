@@ -6,6 +6,7 @@ const Login = () => {
   return (
     <Container>
       <Form className="w-25 mx-auto">
+        <h3>Please Login!</h3>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control
@@ -29,7 +30,7 @@ const Login = () => {
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
         <Button variant="primary" type="submit">
-          Submit
+          Login
         </Button>
         <br />
         <Form.Text className="text-secondary">
