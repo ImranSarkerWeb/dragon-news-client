@@ -5,7 +5,6 @@ import second from "../../../assets/2.png";
 import third from "../../../assets/3.png";
 import moment from "moment";
 import { FaCalendarAlt } from "react-icons/fa";
-import { useLocation } from "react-router-dom";
 
 const EditorInsights = () => {
   return (
