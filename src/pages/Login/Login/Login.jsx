@@ -8,7 +8,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const path = location?.state?.from?.pathname || "/";
+  const from = location?.state?.from?.pathname || "/";
   const handleLogin = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -19,7 +19,7 @@ const Login = () => {
       .then((result) => {
         const loggedUser = result.user;
         console.log(loggedUser);
-        navigate(path);
+        navigate(from, { replace: true });
       })
       .catch((err) => console.log(err.message));
   };
